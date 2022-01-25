@@ -24,6 +24,14 @@ p {
   margin: 10px 0; /* top and bottom 10px, left and right 0px */
 }
 
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1100px; /* how far the titles can go across the navbar */
+  overflow: auto;
+  padding: 0 20px;
+}
+
 /* Navbar */
 #navbar {
   background-color: #333;
@@ -51,4 +59,12 @@ p {
 #navbar ul li a {
   display: block;
   padding: 20px;
+  text-align: center;
+}
+
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  color: #f7c08a;
+  background-color: #444;
 }
